@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidDesignPattern</string>
+    <string name="note_tips">写点嘛~</string>
+    <string name="save">保存</string>
+</resources>

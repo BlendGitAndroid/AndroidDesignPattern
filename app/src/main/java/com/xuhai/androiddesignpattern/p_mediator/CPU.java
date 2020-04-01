@@ -1,0 +1,28 @@
+package com.xuhai.androiddesignpattern.p_mediator;
+
+public class CPU extends Colleague {
+
+    private String dataVideo;
+    private String dataSound;
+
+    public CPU(Mediator mediator) {
+        super(mediator);
+    }
+
+    public String getDataVideo() {
+        return dataVideo;
+    }
+
+    public String getDataSound() {
+        return dataSound;
+    }
+
+    public void decodeData(String data) {
+        String[] tmp = data.split(",");
+
+        dataVideo = tmp[0];
+        dataSound = tmp[1];
+
+        mMediator.changed(this);
+    }
+}

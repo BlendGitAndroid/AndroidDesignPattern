@@ -1,0 +1,4 @@
+include ':app'
+rootProject.name='AndroidDesignPattern'
+include ':annotation'
+include ':annotationAndroid'
