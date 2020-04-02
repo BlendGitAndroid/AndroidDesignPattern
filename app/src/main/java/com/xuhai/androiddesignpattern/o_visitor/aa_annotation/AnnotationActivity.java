@@ -10,8 +10,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.xuhai.androiddesignpattern.R;
 
-import java.lang.reflect.Field;
-
 public class AnnotationActivity extends AppCompatActivity {
 
     @GetViewTo(R.id.annotationTv)
@@ -24,7 +22,7 @@ public class AnnotationActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.annotation_layout);
-        getAllAnnotationView();
+        AnnotationUtil.getAllAnnotationView(this);
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -33,20 +31,4 @@ public class AnnotationActivity extends AppCompatActivity {
         });
     }
 
-    private void getAllAnnotationView() {
-        Field[] fields = this.getClass().getDeclaredFields();
-        for (Field field : fields) {
-            if (field.getAnnotations() != null) {
-                if (field.isAnnotationPresent(GetViewTo.class)) {
-                    field.setAccessible(true);
-                    GetViewTo getViewTo = field.getAnnotation(GetViewTo.class);
-                    try {
-                        field.set(this, findViewById(getViewTo.value()));
-                    } catch (IllegalAccessException e) {
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }
-    }
 }
