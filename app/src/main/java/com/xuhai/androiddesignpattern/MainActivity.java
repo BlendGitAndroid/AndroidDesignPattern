@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     private CircleMenuLayout mCircleMenuLayout;
 
-    //测试账号
     private String[] mItemTexts = new String[]{"安全中心 ", "特色服务", "投资理财",
             "转账汇款", "我的账户", "信用卡"};
     private int[] mItemImgs = new int[]{R.drawable.home_mbank_1_normal,
