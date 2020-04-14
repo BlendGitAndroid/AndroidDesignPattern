@@ -1,4 +1,4 @@
-package com.xuhai.androiddesignpattern.h_iterator;
+package com.xuhai.androiddesignpattern.h_chainofresponsibiliity;
 
 public class Client {
 
