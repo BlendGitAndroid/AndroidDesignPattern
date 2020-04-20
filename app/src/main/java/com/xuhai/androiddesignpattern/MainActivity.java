@@ -8,9 +8,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.xuhai.androiddesignpattern.o_visitor.aa_annotation.AnnotationActivity;
-import com.xuhai.androiddesignpattern.q_proxy.Binder.BankActivity;
 import com.xuhai.androiddesignpattern.s_adapter.CircleMenuLayout;
+import com.xuhai.study.UpdateUIActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -60,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,
                         "you can do something just like ccb  ",
                         Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this, BankActivity.class));
+                startActivity(new Intent(MainActivity.this, UpdateUIActivity.class));
             }
         });
 
