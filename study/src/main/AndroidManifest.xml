@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xuhai.study">
+    package="com.blend.study">
 
     <application>
-        <activity android:name=".UpdateUIActivity"></activity>
+        <activity android:name="com.blend.study.UpdateUIActivity"></activity>
     </application>
 
 </manifest>

@@ -3,7 +3,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.xuhai.androiddesignpattern.l_memento.Demo2.widgets.NoteEditText
+    <com.blend.androiddesignpattern.l_memento.Demo2.widgets.NoteEditText
         android:id="@+id/note_edittext"
         android:layout_width="match_parent"
         android:layout_height="0dp"

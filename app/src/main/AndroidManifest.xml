@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.xuhai.androiddesignpattern">
+    package="com.blend.androiddesignpattern">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -11,22 +11,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".o_visitor.butterknife.DemoActivity"></activity>
-        <activity android:name=".l_memento.Demo2.NodeMainActivity" />
-        <activity android:name=".q_proxy.Binder.BankActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name="com.blend.androiddesignpattern.o_visitor.butterknife.DemoActivity"></activity>
+        <activity android:name="com.blend.androiddesignpattern.l_memento.Demo2.NodeMainActivity" />
+        <activity android:name="com.blend.androiddesignpattern.q_proxy.Binder.BankActivity" />
+        <activity android:name="com.blend.androiddesignpattern.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".x_mvp.ActiclesActivity" />
-        <activity android:name=".o_visitor.aa_annotation.AnnotationActivity" />
+        <activity android:name="com.blend.androiddesignpattern.x_mvp.ActiclesActivity" />
+        <activity android:name="com.blend.androiddesignpattern.o_visitor.aa_annotation.AnnotationActivity" />
 
         <service
-            android:name=".q_proxy.Binder.BankService"
-            android:process="com.xuhai.androiddesignpattern.q_proxy.Binder.BankService"></service>
+            android:name="com.blend.androiddesignpattern.q_proxy.Binder.BankService"
+            android:process="com.blend.androiddesignpattern.q_proxy.Binder.BankService"></service>
     </application>
 
 </manifest>
