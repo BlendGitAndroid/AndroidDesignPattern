@@ -1,9 +1,11 @@
-package com.blend.androiddesignpattern.x_mvp;
+package com.blend.androiddesignpattern.x_mvp.optimize;
 
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.blend.androiddesignpattern.x_mvp.optimize.BasePresenter;
 
 
 public abstract class MVPBaseActivity<V, T extends BasePresenter<V>> extends AppCompatActivity {

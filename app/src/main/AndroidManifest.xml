@@ -20,7 +20,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.blend.androiddesignpattern.x_mvp.ActiclesActivity" />
+        <activity android:name="com.blend.androiddesignpattern.x_mvp.optimize.ActiclesActivity" />
         <activity android:name="com.blend.androiddesignpattern.o_visitor.aa_annotation.AnnotationActivity" />
 
         <service

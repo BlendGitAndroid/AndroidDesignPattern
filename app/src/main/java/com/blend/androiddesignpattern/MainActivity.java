@@ -9,7 +9,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.blend.androiddesignpattern.s_adapter.CircleMenuLayout;
-import com.blend.study.UpdateUIActivity;
+import com.blend.androiddesignpattern.x_mvp.optimize.ActiclesActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,
                         "you can do something just like ccb  ",
                         Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(MainActivity.this, UpdateUIActivity.class));
+                startActivity(new Intent(MainActivity.this, ActiclesActivity.class));
             }
         });
 
