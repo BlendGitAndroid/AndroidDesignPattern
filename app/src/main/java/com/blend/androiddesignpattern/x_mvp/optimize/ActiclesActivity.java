@@ -28,6 +28,11 @@ public class ActiclesActivity extends MVPBaseActivity<ArticleViewInterface, Arti
     }
 
     @Override
+    protected ArticleViewInterface getView() {
+        return this;
+    }
+
+    @Override
     public void showArticles(List<Article> articles) {
         mArticles.addAll(articles);
         System.out.println("展示文章");
