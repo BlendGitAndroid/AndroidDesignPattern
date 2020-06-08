@@ -44,6 +44,8 @@ public class BankActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.aidl_layout);
         AnnotationUtil.getAllAnnotationView(this);
+
+        //绑定服务端的Service
         bindService(new Intent(this, BankService.class), conn, BIND_AUTO_CREATE);
 
         openAccountBtn.setOnClickListener(new View.OnClickListener() {
@@ -91,6 +93,7 @@ public class BankActivity extends AppCompatActivity {
         });
     }
 
+    //绑定成功后，将服务端返回的Binder对象转换成AIDL接口所属的类型，就可以调用AIDL中的方法了。
     private ServiceConnection conn = new ServiceConnection() {
         @Override
         public void onServiceConnected(ComponentName name, IBinder service) {

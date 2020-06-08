@@ -4,7 +4,9 @@ import com.blend.androiddesignpattern.IBankAIDL;
 
 import java.util.UUID;
 
-
+/**
+ * 服务端的代码，在这里实现AIDL中定义的接口
+ */
 public class BankBinder extends IBankAIDL.Stub {
 
     @Override
