@@ -3,10 +3,15 @@ package com.blend.androiddesignpattern;
 
 // Declare any non-default types here with import statements
 
-//暴露给客户端的接口，在AIDL文件中声明，最后在Service中实现这个AIDL接口。
-//如果在AIDL中用到了自定义的Parcelable对象，那么必须新建一个和它同名的AIDL文件，并在其中声明它为Parcelable类型。
-//比如：用到了Book这个类，必须要创建Bool.aidl，然后在里面添加(parcelable Book;)
 interface IBankAIDL {
+
+        /*
+         * .aidl文件
+         *暴露给客户端的接口，在AIDL文件中声明，最后在Service中实现这个AIDL接口。
+         *如果在AIDL中用到了自定义的Parcelable对象，那么必须新建一个和它同名的AIDL文件，并在其中声明它为Parcelable类型。
+        *比如：用到了Book这个类，必须要创建Bool.aidl，然后在里面添加(parcelable Book;)
+        */
+
        /**
          * 开户
          *
