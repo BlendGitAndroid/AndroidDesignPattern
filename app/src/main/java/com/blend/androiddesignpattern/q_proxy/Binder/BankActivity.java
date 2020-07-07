@@ -18,7 +18,11 @@ import com.blend.androiddesignpattern.R;
 import com.blend.androiddesignpattern.o_visitor.aa_annotation.AnnotationUtil;
 import com.blend.androiddesignpattern.o_visitor.aa_annotation.GetViewTo;
 
-
+/**
+ * 在这个例子中，客户端和服务端位于同一个APP的不同的进程，所以共用同一套AIDL文件
+ * 要是客户端和服务端不在同一个APP，在服务端定义好AIDL文件后，客户端也需要有与服务端完全相同的AIDL文件，包括包名和使用到的实体类
+ * 这样就能够通过AIDL进行客户端和服务端的通信了
+ */
 public class BankActivity extends AppCompatActivity {
 
     @GetViewTo(R.id.aidlTv)
