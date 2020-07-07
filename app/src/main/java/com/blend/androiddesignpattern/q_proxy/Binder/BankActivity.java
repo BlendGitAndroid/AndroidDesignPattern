@@ -49,7 +49,15 @@ public class BankActivity extends AppCompatActivity {
         setContentView(R.layout.aidl_layout);
         AnnotationUtil.getAllAnnotationView(this);
 
-        //绑定服务端的Service
+        //绑定服务端的Service，这是在同一个进程中绑定
+        //不同的进程中绑定，需要使用
+        //         Intent intent = new Intent();
+        //         intent.setComponent(new ComponentName(
+        //                 "com.dn_alan.service",
+        //                 "com.dn_alan.service.DNAidlService"));
+        //         bindService(intent, conn, Context.BIND_AUTO_CREATE);
+        // ComponentName，这个类主要用来定义可见一个应用程序组件
+        // ComponentName的构造函数：ComponentName（String pkg，String cls），封装一个组件的应用包名和组件的名字
         bindService(new Intent(this, BankService.class), conn, BIND_AUTO_CREATE);
 
         openAccountBtn.setOnClickListener(new View.OnClickListener() {
