@@ -13,7 +13,9 @@
         <activity android:name="com.blend.androiddesignpattern.o_visitor.butterknife.DemoActivity"></activity>
         <activity android:name="com.blend.androiddesignpattern.l_memento.Demo2.NodeMainActivity" />
         <activity android:name="com.blend.androiddesignpattern.q_proxy.Binder.BankActivity" />
-        <activity android:name="com.blend.androiddesignpattern.MainActivity">
+        <activity
+            android:name="com.blend.androiddesignpattern.MainActivity"
+            android:theme="@style/LaunchTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
