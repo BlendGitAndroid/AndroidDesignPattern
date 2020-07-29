@@ -1,4 +1,4 @@
-package com.blend.androiddesignpattern.y_mvvm;
+package com.blend.androiddesignpattern.y_mvvm.demo1;
 
 import android.os.Bundle;
 
