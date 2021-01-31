@@ -13,7 +13,10 @@ import android.widget.TextView;
 
 import com.blend.androiddesignpattern.R;
 
-
+/**
+ * 适配器模式：将一个类的接口变换成客户端期待的另外一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作。
+ * 使用场景：
+ */
 public class CircleMenuLayout extends ViewGroup {
 
     /**
@@ -96,7 +99,7 @@ public class CircleMenuLayout extends ViewGroup {
      */
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec,heightMeasureSpec);
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         int resWidth = 0;
         int resHeight = 0;
 
