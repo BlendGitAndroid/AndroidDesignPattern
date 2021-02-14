@@ -12,4 +12,8 @@ public class RShoes extends Decorator {
         super.show();
         Log.e(TAG, "show: 穿鞋子");
     }
+
+    public void other(){
+        Log.e(TAG, "other: 其他的功能");
+    }
 }
