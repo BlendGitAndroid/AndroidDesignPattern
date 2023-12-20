@@ -16,7 +16,6 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:addTextChanged="@{blend.userTextWatcher}"
             android:hint="User"
             android:text="@{blend.mInfo.getUser}" />
     </LinearLayout>
