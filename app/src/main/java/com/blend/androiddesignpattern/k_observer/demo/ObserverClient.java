@@ -11,13 +11,16 @@ package com.blend.androiddesignpattern.k_observer.demo;
  * 而LiveData是包装了观察者和被观察者，观察者会观察被观察者的生命周期变化，但是onChanged方法是在
  * LiveData内部回调的。
  * 观察者模式就是有多个接收者的回调模式。
+ * <p>
+ * 在ListView的中，Adapter就是被观察者，ListView中会生成观察者，setAdapter的时候，会将观察者注册到
+ * Adapter中，当数据发生变化的时候，Adapter会调用notifyDataSetChanged通知ListView调用requestLayout重新布局。
  */
 public class ObserverClient {
 
     public static void test() {
         DevTechFrontier frontier = new DevTechFrontier();
         Coder coder = new Coder("徐海");
-        frontier.addObserver(coder);
+        frontier.addObserver(coder);    // 被观察者添加观察者
 
         Coder coder1 = new Coder("徐洋");
         frontier.addObserver(coder1);

@@ -2,6 +2,7 @@ package com.blend.androiddesignpattern;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -13,6 +14,8 @@ import com.blend.androiddesignpattern.x_mvp.optimize.ActiclesActivity;
 import com.blend.study.UpdateUIActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
     private Button mButton;
 
@@ -68,8 +71,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    // 调用startActivity后,会调用onSaveInstanceState方法
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
+        Log.e(TAG, "onSaveInstanceState: ");
     }
 }

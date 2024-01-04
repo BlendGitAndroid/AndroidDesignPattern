@@ -16,6 +16,13 @@ import com.blend.androiddesignpattern.R;
 /**
  * 适配器模式：将一个类的接口变换成客户端期待的另外一种接口，从而使原本因接口不匹配而无法在一起工作的两个类能够在一起工作。
  * 使用场景：
+ * ListView作为最重要的控件,它需要能够显示各式各样的视图(Item View),每个ListView需要的显示效果各不相同,显示的数据类型、数量等
+ * 也千变万化,那么如何应对这种变化成为架构师需要考虑的最重要特性之一。
+ * Android的做法是增加一个Adapter层来隔离变化,将ListView需要的关于Item View接口抽象到Adapter对象中,并且在ListView内部
+ * 调用Adapter这些接口完成布局等操作。这样只要用户实现了Adapter的接口,并且将该Adapter设置给ListView, ListView就可以按照
+ * 用户设定的UI效果、数量、数据来显示每一项数据。ListView最重要的问题是要解决每一项Item视图的输出, ItemView千变万化,但终究
+ * 它都是View类型, Adapter统一将Item View输出为View,这样就很好地应对了Item View的可变性。这虽然有些脱离Adapter模式将
+ * 不兼容的接口转换为可用接口的使用场景,但也是Adapter模式的一种变种实现。
  */
 public class CircleMenuLayout extends ViewGroup {
 

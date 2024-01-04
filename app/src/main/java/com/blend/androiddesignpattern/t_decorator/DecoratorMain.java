@@ -7,6 +7,7 @@ package com.blend.androiddesignpattern.t_decorator;
  * SinglePerson：组件具体实现类，也是装饰的具体兑现。
  * Decorator：抽象装饰者。这个类就是为了装饰组件对象，其内部一定要有一个指向组件对象的引用。
  * RShoes：装饰者的具体实现类。
+ * 这里的装饰者模式,和Context和ContextImpl的是有别的的。就看怎么理解了。
  */
 public class DecoratorMain {
 

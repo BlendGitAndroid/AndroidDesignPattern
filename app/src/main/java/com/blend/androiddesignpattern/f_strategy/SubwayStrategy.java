@@ -10,9 +10,9 @@ public class SubwayStrategy implements CalculateStrategy {
     public int calculatePrice(int km) {
         if (km <= 6) {
             return 3;
-        } else if (km > 6 && km <= 12) {
+        } else if (km <= 12) {
             return 4;
-        } else if (km > 12 && km <= 22) {
+        } else if (km <= 22) {
             return 5;
         } else {
             return 6;
